@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento Estilo Word</title>
+    <style>
+        /* Estilo general del cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Estilo para las páginas */
+        .page {
+            width: 21cm;
+            height: 29.7cm;
+            background-color: white;
+            margin: 20px auto;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            page-break-after: always;
+        }
+
+        /* Para que parezca una hoja de papel */
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid #000;
+        }
+
+        /* Títulos y párrafos */
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        /* Cuadro de texto */
+        .textbox {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #e8e8e8;
+        }
+
+        /* Código de ejemplo */
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow: auto;
+        }
+
+        /* Efecto de separación en las impresiones */
+        @media print {
+            .page {
+                page-break-after: always;
+            }
+        }
+
+        /* Estilo para los correos electrónicos */
+        .contact-info a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Página 1 -->
+    <div class="page">
+        <h1>Introducción</h1>
+        <p>HTML (Lenguaje de Marcado de Hipertexto) es el lenguaje estándar utilizado para crear y diseñar páginas web. Define la estructura de una página mediante el uso de elementos representados por etiquetas. Estas etiquetas le indican al navegador cómo mostrar el contenido como texto, imágenes, enlaces y más.</p>
+    </div>
+
+    <!-- Página 2 -->
+    <div class="page">
+        <h1>HTML</h1>
+        <p>HTML es el lenguaje que se utiliza para estructurar páginas web. A través de etiquetas, podemos definir cómo se mostrarán los textos, imágenes, enlaces, y otros elementos en un navegador web.</p>
+        <h2>Herramientas de Edición de Código</h2>
+        <p><strong>Visual Studio Code.</strong> Considerado como uno de los preferidos de los desarrolladores web, Visual Studio Code es un editor que maneja múltiples lenguajes de programación, entre ellos el HTML, Python, CSS y JavaScript.</p>
+        <p><strong>Notepad++.</strong></p>
+        <p><strong>Sublime Text.</strong></p>
+        <p><strong>Apache NetBeans IDE.</strong></p>
+        <p><strong>CKEditor.</strong></p>
+        <p><strong>Komodo Edit.</strong></p>
+        <p><strong>Brackets.</strong></p>
+        <p><strong>Adobe Dreamweaver CC.</strong></p>
+    </div>
+
+    <!-- Página 3 -->
+    <div class="page">
+        <h1>Elementos Clave</h1>
+        <p>Existen varios elementos clave en HTML que definen la estructura de una página web:</p>
+        <ul>
+            <li>&lt;!DOCTYPE html&gt;: Define el tipo de documento y la versión de HTML.</li>
+            <li>&lt;html&gt;: El elemento raíz de la página HTML.</li>
+            <li>&lt;head&gt;: Contiene metadatos como el título y enlaces a estilos CSS.</li>
+            <li>&lt;title&gt;: Define el título que aparece en la pestaña del navegador.</li>
+            <li>&lt;body&gt;: Contiene el contenido visible de la página (texto, imágenes, etc.).</li>
+            <li>&lt;h1&gt; a &lt;h6&gt;: Etiquetas de encabezado para títulos (del mayor al menor).</li>
+        </ul>
+    </div>
+
+    <!-- Página 4 -->
+    <div class="page">
+        <h1>Conclusión</h1>
+        <p>En resumen, HTML es una herramienta esencial para crear páginas web. Con un conocimiento básico de etiquetas y elementos, puedes estructurar cualquier tipo de contenido web.</p>
+        <p>Este documento muestra cómo estructurar contenido en varias "páginas" simuladas dentro de un sitio web.</p>
+    </div>
+
+    <!-- Página 5: Información de contacto -->
+    <div class="page">
+        <h1>Creado por Orlando Rodas</h1>
+        <h2>Información de contacto:</h2>
+        <div class="contact-info">
+        <a href="mailto:orlandorodas303@gmail.com">orlandorodas303@gmail.com</a>
+        <a href="mailto:orlandorodas09@outlook.com">orlandorodas09@outlook.com</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
